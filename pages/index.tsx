@@ -1,5 +1,5 @@
-import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
+import prisma from '../lib/prisma';
 
 export default function Home() {
   return (
