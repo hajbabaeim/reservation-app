@@ -9,7 +9,8 @@
     "lint": "next lint",
     "prisma:push": "npx prisma db push",
     "prisma:migrate": "npx prisma migrate dev",
-    "prisma:client": "npx prisma generate"
+    "prisma:client": "npx prisma generate",
+    "prisma:seed": "npx prisma db seed"
   },
   "dependencies": {
     "@prisma/client": "^4.13.0",
@@ -17,6 +18,7 @@
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
     "autoprefixer": "^10.4.14",
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "date-fns": "^2.29.3",
     "eslint": "8.38.0",
@@ -37,6 +39,10 @@
   },
   "devDependencies": {
     "@types/pg": "^8.6.6",
-    "prisma": "^4.13.0"
+    "prisma": "^4.13.0",
+    "ts-node": "^10.9.1"
+  },
+  "prisma": {
+    "seed": "ts-node --transpile-only ./prisma/seed.ts"
   }
 }
