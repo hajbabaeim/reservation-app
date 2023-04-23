@@ -13,6 +13,10 @@
     "prisma:seed": "npx prisma db seed"
   },
   "dependencies": {
+    "@auth0/nextjs-auth0": "^2.5.0",
+    "@pothos/core": "^3.29.0",
+    "@pothos/plugin-prisma": "^3.47.2",
+    "@pothos/plugin-relay": "^3.40.0",
     "@prisma/client": "^4.13.0",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
@@ -23,6 +27,7 @@
     "date-fns": "^2.29.3",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "graphql-yoga": "^3.9.1",
     "next": "13.3.0",
     "next-auth": "^4.22.1",
     "next-auth-client": "^1.5.0",

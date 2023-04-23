@@ -44,3 +44,7 @@ enum Role {
   USER
   ADMIN
 }
+
+generator pothos {
+  provider = "prisma-pothos-types"
+}
